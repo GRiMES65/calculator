@@ -3,7 +3,6 @@ const subtract = (a, b) => a - b;
 const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
 const power = (a, b) => Math.pow(a, b);
-const factorial = (a, b) => a % b;
 const root = (a, b) => a/b;
 
 
@@ -57,11 +56,9 @@ function calculate() {
       case '^':
         result = power(firstOperand, secondOperand);
         break;
-      case '%':
-        result = factorial(firstOperand, secondOperand);
-        break;
       case '√':
-        result = Math.sqrt(firstOperand, secondOperand)
+        result = Math.sqrt(firstOperand, secondOperand);
+        break;
       default:
         result = "Error";
     }
