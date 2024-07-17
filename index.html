@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body>
+    
+    <div id="calculatorContainer">
+        <input type="form" id="screen" readonly>
+        <div id="numsAndFunctions">
+                <button onclick="toDisplay(7)">7</button>
+                <button onclick="toDisplay(8)">8</button>
+                <button onclick="toDisplay(9)">9</button>
+                <button onclick="setOperator('√')" class="operators">√</button>
+                <button onclick="delChar()">DEL</button>
+                <button onclick="toDisplay(4)">4</button>
+                <button onclick="toDisplay(5)">5</button>
+                <button onclick="toDisplay(6)">6</button>
+                <button onclick="setOperator('x')" class="operators">x</button>
+                <button onclick="setOperator('/')" class="operators">/</button>
+                <button onclick="toDisplay(1)">1</button>
+                <button onclick="toDisplay(2)">2</button>
+                <button onclick="toDisplay(3)">3</button>
+                <button onclick="setOperator('-')" class="operators">-</button>
+                <button onclick="setOperator('^')" class="operators">^</button>
+                <button onclick="resetFunction()" class="clearButton">c</button>
+                <button onclick="toDisplay(0)">0</button>
+                <button onclick="toDisplay('.')" class="operators">.</button>
+                <button onclick="setOperator('+')" class="operators">+</button>
+                <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
